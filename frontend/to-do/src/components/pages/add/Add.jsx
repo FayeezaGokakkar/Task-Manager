@@ -9,7 +9,7 @@ const Add = () => {
     title: "",
     description: "",
     status: "Pending",
-    category:"",
+    category: "",
     dueDate: "",
     priority: "Medium",
   });
@@ -34,11 +34,11 @@ const Add = () => {
 
   return (
     <>
-      
+
 
 
       <div className="container mt-5">
-          <Link
+        <Link
           to="/"
           className="d-inline-block mb-3 text-dark fs-4"
         >
@@ -92,20 +92,20 @@ const Add = () => {
               </select>
             </div>
             {/* Category */}
-             <div>
-                        <label className="block text-sm mb-1">Category</label>
-                        <select
-                            name="category"
-                            value={form.category}
-                            onChange={HandleChange}
-                            className="w-full border rounded-lg p-2"
-                        >
-                            <option>Home</option>
-                            <option>Personal</option>
-                            <option>Official</option>
-                            <option>Fitness</option>
-                        </select>
-                    </div>
+            <div>
+              <label className="block text-sm mb-1">Category</label>
+              <select
+                name="category"
+                value={form.category}
+                onChange={HandleChange}
+                className="w-full border rounded-lg p-2"
+              >
+                <option>Home</option>
+                <option>Personal</option>
+                <option>Official</option>
+                <option>Fitness</option>
+              </select>
+            </div>
 
             {/* Due Date */}
             <div className="mb-3">
